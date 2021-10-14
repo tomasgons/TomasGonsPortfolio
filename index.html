@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Tomas Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav id="nav" class="nav-closed">
+      <button class="close-nav-btn" id="close-nav">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="logo">
+        <img src="pics/whatsupsmall.jpg" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <div id="headertext">
+        <h1>Tomas Gons</h1>
+        <p>developing web developer based in Amsterdam, The Netherlands</p>
+        <button class="cta-btn" id="open">HIRE ME</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="home"></div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <p>these are some of the projects I made</p>
+
+        <div class="projects" id="typedrummer">
+          <h3>Typedrummer</h3>
+          <p>HTML, CSS & JavaScript: play the drums with your keyboard!</p>
+          <div class="projectscontent">
+            <a href="https://tgtypedrummer.netlify.app/" target="_blank"
+              ><img src="pics/tgdrummer.png" alt="typedrummer"
+            /></a>
+            <div class="links">
+              <a href="https://tgtypedrummer.netlify.app/" target="_blank"
+                ><img src="pics/web2.png" alt="typedrummer"
+              /></a>
+              <a href="https://github.com/tomasgons/TypeDrummer" target="_blank"
+                ><img src="pics/github.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="projects" id="formvalidator">
+          <h3>Form Validation</h3>
+          <p></p>
+          <p>HTML, CSS & JavaScript</p>
+          <div class="projectscontent">
+            <a href="https://tgformvalidator.netlify.app/" target="_blank"
+              ><img src="pics/formvalidator.png" alt="typedrummer"
+            /></a>
+            <div class="links">
+              <a href="https://tgformvalidator.netlify.app/" target="_blank"
+                ><img src="pics/web2.png" alt="formvalidator"
+              /></a>
+              <a
+                href="https://github.com/tomasgons/Form-Validation"
+                target="_blank"
+                ><img src="pics/github.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="projects" id="videoplayer">
+          <h3>Custom Video Player</h3>
+          <p>HTML, CSS & JavaScript</p>
+          <div class="projectscontent">
+            <a href="https://tgcustomvideoplayer.netlify.app//" target="_blank"
+              ><img src="pics/VideoPlayer.png" alt="videoplayer"
+            /></a>
+            <div class="links">
+              <a href="https://tgcustomvideoplayer.netlify.app/" target="_blank"
+                ><img src="pics/web2.png" alt=""
+              /></a>
+              <a
+                href="https://github.com/tomasgons/CustomVideoPlayer"
+                target="_blank"
+                ><img src="pics/github.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="projects" id="exchange">
+          <h3>Exchange Calculator</h3>
+          <p>HTML, CSS, JavaScript & REST API</p>
+          <div class="projectscontent">
+            <a href="https://tgexchange.netlify.app/" target="_blank"
+              ><img src="pics/exchange.png" alt="exchangecalculator"
+            /></a>
+            <div class="links">
+              <a href="https://tgexchange.netlify.app//" target="_blank"
+                ><img src="pics/web2.png" alt="web"
+              /></a>
+              <a href="https://tgexchange.netlify.app/" target="_blank"
+                ><img src="pics/github.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <h2>About</h2>
+        <p>
+          I'm an audio engineer, musician, surfer and starting front end web
+          developer
+        </p>
+        <div class="aboutimg"><img src="pics/whatsup1.jpg" alt="" /></div>
+      </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>send me an email: tomasgons@gmail or click the button</p>
+        <button class="cta-btn" id="open2">HIRE ME</button>
+      </div>
+      <div class="contactimg"><img src="pics/whatsup2.jpeg" alt="" /></div>
+    </div>
+    <!-- modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Leave a message and I will contact you</p>
+
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="text">Message</label>
+              <textarea
+                id="message"
+                placeholder="Enter Message"
+                class="form-input"
+              ></textarea>
+            </div>
+            <!-- <div>
+                <label for="password">Password</label>
+                <input type="password" id="passowrd" placeholder ="Enter Password" class="form-input">
+            </div>
+            <div>
+                <label for="password2">Confirm Password</label>
+                <input type="password2" id="password2" placeholder ="Comfirm Password" class="form-input">
+            </div> -->
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
