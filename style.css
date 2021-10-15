@@ -152,6 +152,7 @@ button:focus {
 }
 
 .projects img {
+  min-width: 100px;
   max-height: 300px;
   border-radius: 5px;
   border: solid white 1px;
@@ -324,7 +325,7 @@ header .toggle {
   box-shadow: none;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
   .links .icon {
     right: 10rem;
   }
