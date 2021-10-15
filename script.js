@@ -49,7 +49,11 @@ window.addEventListener("click", (e) =>
 
 );
 
+container.addEventListener("click", (e) =>
+    e.target !== nav ? nav.classList.add("nav-closed") : false
 
+
+);
 
 
 
