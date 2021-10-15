@@ -8,7 +8,7 @@ const closeNav = document.querySelector("#close-nav")
 
 const closeModalBtn = document.querySelector("#close")
 
-
+const links = document.querySelectorAll("nav li")
 
 toggle.addEventListener("click", () => {
     nav.classList.remove("nav-closed");
@@ -22,6 +22,14 @@ closeNav.addEventListener("click", () => {
 
 
 });
+
+links.forEach((link) => {
+    link.addEventListener("click", () => {
+        nav.classList.add("nav-closed");
+    })
+
+});
+
 
 
 
