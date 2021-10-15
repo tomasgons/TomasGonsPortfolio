@@ -152,8 +152,9 @@ button:focus {
 }
 
 .projects img {
-  height: 150px;
+  max-height: 300px;
   border-radius: 5px;
+  border: solid white 1px;
 }
 .projects {
   margin-top: 20px;
@@ -162,25 +163,37 @@ button:focus {
 }
 .projectscontent {
   display: flex;
+  justify-content: center;
+  margin: 50px;
 }
 .links {
+  position: relative;
   display: flex;
-  padding: 20px;
 
-  margin: 20px;
+  padding-right: 5px;
+
+  font-size: 34px;
+  z-index: 10;
+}
+.links .icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 10rem;
+
+  border-radius: 50%;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+.links .icon a {
+  color: rgb(84, 83, 83);
 }
 
 #home {
   text-align: center;
   margin: 500px;
-}
-
-#projects .links img {
-  max-height: 100px;
-  margin-top: 20px;
-  height: auto;
-  padding: 10px;
-  border-radius: 50px;
 }
 
 .projects {
@@ -314,5 +327,9 @@ header .toggle {
 @media (min-width: 900px) {
   header .toggle {
     left: 1rem;
+  }
+
+  .links .icon {
+    right: 10rem;
   }
 }
