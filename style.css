@@ -324,7 +324,7 @@ header .toggle {
   box-shadow: none;
 }
 
-@media (min-width: 340px) {
+@media (min-width: 500px) {
   .links .icon {
     right: 10rem;
   }
