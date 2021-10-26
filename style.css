@@ -5,7 +5,7 @@ html {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
@@ -42,12 +42,12 @@ header p {
 
 header .toggle {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: transparent;
   font-family: Calibre-Regular, sans-serif;
   font-size: 20px;
   opacity: 0.6;
-
+  right: 1rem;
   top: 1rem;
   border-radius: 10px;
   padding: 0;
@@ -59,7 +59,7 @@ header .toggle {
   top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 button,
@@ -71,7 +71,7 @@ input[type="submit"] {
   padding: 8px 12px;
   border-radius: 20px;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
 }
 
 button button:focus,
@@ -156,7 +156,7 @@ nav ul li a:hover {
 .nav-closed {
   z-index: 100;
   -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .nav {
@@ -164,7 +164,7 @@ nav ul li a:hover {
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .close-nav-btn {
@@ -174,7 +174,7 @@ nav ul li a:hover {
   top: 0;
   right: 0;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .projects {
@@ -195,9 +195,9 @@ nav ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
- 
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
 }
 
 .links {
@@ -253,6 +253,10 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
+.aboutimg i {
+  font-size: 20px;
+}
+
 .contactimg {
   text-align: center;
 }
@@ -293,13 +297,13 @@ nav ul li a:hover {
   color: black;
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.727);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.727);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.727);
   position: absolute;
   overflow: hidden;
   top: 47%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   max-width: 100%;
   width: 400px;
   z-index: 100;
@@ -351,7 +355,7 @@ nav ul li a:hover {
   top: 0;
   right: 0;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 @media (min-width: 340px) {
