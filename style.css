@@ -23,6 +23,7 @@ body {
 a {
   color: white;
   text-decoration: none;
+  cursor: url(pics/paistycursor.png);
 }
 
 header {
@@ -84,7 +85,6 @@ input[type="submit"] {
   background-color: #be2edd;
   border: 0;
   color: white;
-  cursor: pointer;
   padding: 8px 12px;
   border-radius: 20px;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
