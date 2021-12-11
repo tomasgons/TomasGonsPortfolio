@@ -210,6 +210,10 @@ nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -217,7 +221,6 @@ nav ul li a:hover {
 }
 
 .links {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,11 +233,11 @@ nav ul li a:hover {
   width: 20px;
   height: 20px;
   position: relative;
-  right: 8rem;
+  left: 1rem;
   border-radius: 50%;
   margin: 10px;
   text-decoration: none;
-  color: black;
+  color: white;
   padding-left: 5px;
 }
 
@@ -376,6 +379,16 @@ nav ul li a:hover {
 @media (min-width: 900px) {
   header .toggle {
     left: 1rem;
+  }
+  .projectscontent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .links,
+  .icon {
+    left: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
