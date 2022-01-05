@@ -33,6 +33,12 @@ header {
   text-align: center;
 }
 
+header img {
+  margin-top: 20rem;
+  width: 70%;
+  border-radius: 10px;
+}
+
 header h1 {
   margin: 10px;
 }
@@ -193,7 +199,6 @@ nav ul li a:hover {
 }
 
 .projects {
-  margin-top: 20px;
   padding: 8px;
   width: 100%;
 }
@@ -247,7 +252,7 @@ nav ul li a:hover {
 
 #home {
   text-align: center;
-  margin: 500px;
+  margin: 100px;
 }
 
 .projects {

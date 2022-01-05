@@ -30,7 +30,11 @@ header {
   font-size: 130%;
   padding: 10px 15px;
   text-align: center;
-
+  img {
+    margin-top: 20rem;
+    width: 70%;
+    border-radius: 10px;
+  }
   h1 {
     margin: 10px;
   }
@@ -164,7 +168,6 @@ nav {
 }
 
 .projects {
-  margin-top: 20px;
   padding: 8px;
   width: 100%;
   img {
@@ -208,7 +211,7 @@ nav {
 
 #home {
   text-align: center;
-  margin: 500px;
+  margin: 100px;
 }
 
 .projects {
