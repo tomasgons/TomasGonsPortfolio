@@ -36,7 +36,7 @@ header {
     border-radius: 10px;
   }
   h1 {
-    margin: 5px;
+    margin-top: 8rem;
   }
   p {
     margin: 30px 0;
@@ -171,6 +171,7 @@ nav {
   padding: 8px;
   width: 100%;
   img {
+    justify-content: center;
     min-width: 250px;
     max-height: 300px;
     border-radius: 5px;
@@ -334,6 +335,12 @@ nav {
 @media (min-width: 900px) {
   header .toggle {
     left: 1rem;
+  }
+  h1 {
+    margin-top: 0rem;
+  }
+  #headertext {
+    top: 10%;
   }
   .projectscontent {
     flex-direction: row;
