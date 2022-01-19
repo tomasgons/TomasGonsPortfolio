@@ -13,6 +13,7 @@
   left: 1%;
   margin-top: 9%;
   opacity: 0;
+  color: #be2edd;
   -webkit-transform: translateX(-309%);
           transform: translateX(-309%);
   -webkit-transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
@@ -23,6 +24,7 @@
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;
+  color: white;
 }
 
 html {
@@ -61,7 +63,7 @@ header {
 
 header img {
   margin-top: 20rem;
-  width: 70%;
+  width: 90%;
   border-radius: 10px;
 }
 
@@ -234,7 +236,8 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 250px;
+  text-align: center;
+  min-width: 225px;
   max-height: 300px;
   border-radius: 5px;
   border: solid white 2px;
@@ -417,6 +420,9 @@ nav ul li a:hover {
   }
   h1 {
     margin-top: 0rem;
+  }
+  header img {
+    width: 70%;
   }
   #headertext {
     top: 10%;
