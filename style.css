@@ -40,7 +40,7 @@ header img {
 }
 
 header h1 {
-  margin: 10px;
+  margin: 5px;
 }
 
 header p {
@@ -64,7 +64,7 @@ header .toggle {
 
 #headertext {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -137,8 +137,8 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 nav .logo {

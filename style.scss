@@ -36,7 +36,7 @@ header {
     border-radius: 10px;
   }
   h1 {
-    margin: 10px;
+    margin: 5px;
   }
   p {
     margin: 30px 0;
@@ -60,7 +60,7 @@ header {
 
 #headertext {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -117,7 +117,7 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
   .logo {
     padding: 30px 0;
     text-align: center;
