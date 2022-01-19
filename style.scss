@@ -3,6 +3,28 @@
 $primary-color: #1019bd;
 $secondary-color: #be2edd;
 
+.title-box-left {
+  display: block;
+  position: relative;
+  width: 1vw;
+  height: 6vw;
+}
+
+.subtitle-left {
+  position: absolute;
+  transition: 1s all;
+  left: 1%;
+  margin-top: 9%;
+  opacity: 0;
+  transform: translateX(-309%);
+  transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
+}
+
+.slide-in-left {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -168,6 +190,7 @@ nav {
 }
 
 .projects {
+  margin-top: 3rem;
   padding: 8px;
   width: 100%;
   img {

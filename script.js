@@ -64,4 +64,18 @@ container.addEventListener("click", (e) =>
 );
 
 
+const slideInLeft = () => {
+    const titleBox = document.querySelectorAll('.subtitle-left');
 
+    titleBox.forEach(function (box) {
+
+        const titlePosition = box.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.9;
+
+        if (titlePosition < screenPosition) {
+            box.classList.add('slide-in-left');
+        }
+
+    });
+}
+window.addEventListener('scroll', slideInLeft);
