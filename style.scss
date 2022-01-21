@@ -3,6 +3,12 @@
 $primary-color: #1019bd;
 $secondary-color: #be2edd;
 
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
 .title-box-left {
   display: block;
   position: relative;
@@ -27,12 +33,6 @@ $secondary-color: #be2edd;
   color: white;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-* {
-  box-sizing: border-box;
-}
 img {
   width: 90%;
   height: auto;
@@ -54,6 +54,7 @@ header {
   font-size: 130%;
   padding: 10px 15px;
   text-align: center;
+  margin-bottom: 15rem;
   img {
     margin-top: 20rem;
     width: 90%;

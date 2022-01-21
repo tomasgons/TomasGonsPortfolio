@@ -70,7 +70,7 @@ const slideInLeft = () => {
     titleBox.forEach(function (box) {
 
         const titlePosition = box.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.9;
+        const screenPosition = window.innerHeight / 1.6;
 
         if (titlePosition < screenPosition) {
             box.classList.add('slide-in-left');
