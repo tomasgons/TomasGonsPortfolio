@@ -228,21 +228,20 @@ nav ul li a:hover {
 }
 
 .projects {
-  margin-top: 3rem;
-  padding: 8px;
-  width: 100%;
-}
-
-.projects img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  min-width: 225px;
-  max-height: 300px;
-  border-radius: 5px;
-  border: solid white 2px;
-  right: 10rem;
+  margin-top: 3rem;
+  padding: 8px;
+  width: 100%;
+  color: #01a201;
 }
 
 .projectscontent {
@@ -256,10 +255,14 @@ nav ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px;
 }
 
-.links {
+.projectscontent img {
+  border-radius: 5px;
+  border: solid white 2px;
+}
+
+.projectscontent .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +271,7 @@ nav ul li a:hover {
   z-index: 10;
 }
 
-.links .icon {
+.projectscontent .links .icon {
   width: 20px;
   height: 20px;
   position: relative;
@@ -280,17 +283,13 @@ nav ul li a:hover {
   padding-left: 5px;
 }
 
-.links .links .icon a {
+.projectscontent .links .icon a {
   color: #545353;
 }
 
 #home {
   text-align: center;
   margin: 100px;
-}
-
-.projects {
-  color: #01a201;
 }
 
 #projects {
@@ -409,6 +408,7 @@ nav ul li a:hover {
 @media (min-width: 340px) {
   .links .icon {
     right: 10rem;
+    font-size: 2rem;
   }
   .links {
     font-size: 34px;
@@ -433,6 +433,9 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .projectscontent img {
+    width: 500px;
   }
   .links,
   .icon {
