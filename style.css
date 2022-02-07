@@ -44,7 +44,7 @@ img {
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
-  background-color: black;
+  background-image: url("pics/space.jpg");
   color: white;
 }
 
@@ -54,12 +54,32 @@ a {
   cursor: url(pics/paistycursor.png);
 }
 
+p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+  background: url(https://d2pn8kiwq2w21t.cloudfront.net/images/jpegPIA17669.width-1024.jpg);
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 header {
-  color: white;
   font-size: 130%;
   padding: 10px 15px;
   text-align: center;
-  margin-bottom: 15rem;
+  margin-bottom: 30rem;
 }
 
 header img {
@@ -97,64 +117,6 @@ header .toggle {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-footer {
-  margin: 50px 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-footer .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-button,
-input[type="submit"] {
-  background-color: #be2edd;
-  border: 0;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
-}
-
-button button:focus,
-input[type="submit"] button:focus {
-  outline: none;
-}
-
-.cta-btn {
-  padding: 12px 30px;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.container {
-  padding: 15px;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 800px;
-}
-
-#projects {
-  margin-bottom: 100px;
-}
-
-#about {
-  margin-bottom: 100px;
-}
-
-#contact {
-  margin-bottom: 100px;
 }
 
 nav {
@@ -227,6 +189,64 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+footer {
+  margin: 50px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+button,
+input[type="submit"] {
+  background-color: #be2edd;
+  border: 0;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
+}
+
+button button:focus,
+input[type="submit"] button:focus {
+  outline: none;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+#projects {
+  margin-bottom: 100px;
+}
+
+#about {
+  margin-bottom: 100px;
+}
+
+#contact {
+  margin-bottom: 100px;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,7 +261,6 @@ nav ul li a:hover {
   margin-top: 3rem;
   padding: 8px;
   width: 100%;
-  color: #01a201;
 }
 
 .projectscontent {
