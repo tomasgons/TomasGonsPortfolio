@@ -89,11 +89,12 @@ header img {
 }
 
 header h1 {
-  margin-top: 8rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 header p {
-  margin: 30px 0;
+  margin-bottom: 6rem;
 }
 
 header .toggle {
@@ -111,16 +112,8 @@ header .toggle {
   padding: 0;
 }
 
-#headertext {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 nav {
-  background-color: #1019bd;
+  background-color: rgba(0, 0, 0, 0.74);
   border-right: 2px solid #c8c8c8;
   position: fixed;
   top: 0;
@@ -144,6 +137,7 @@ nav .logo img {
 }
 
 nav ul {
+  font-size: 1.4rem;
   padding: 0;
   list-style-type: none;
   margin: 0;
@@ -180,7 +174,7 @@ nav ul li a:hover {
 
 .close-nav-btn {
   background-color: transparent;
-  font-size: 25px;
+  font-size: 2rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -303,7 +297,7 @@ input[type="submit"] button:focus {
 }
 
 .projectscontent .links .icon a {
-  color: #545353;
+  color: #e8e8e8;
 }
 
 #home {
@@ -439,15 +433,17 @@ input[type="submit"] button:focus {
     left: 1rem;
   }
   h1 {
-    margin-top: 0rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
+  p {
+    margin-bottom: 6rem;
   }
   header img {
     width: 70%;
   }
-  #headertext {
-    top: 10%;
-  }
   .projectscontent {
+    margin-top: 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -456,9 +452,15 @@ input[type="submit"] button:focus {
   .projectscontent img {
     width: 500px;
   }
-  .links,
-  .icon {
-    left: 5rem;
+  .aboutimg {
+    margin-top: 4rem;
+  }
+  .links .icon {
+    left: 1rem;
+    font-size: 2.5rem;
+  }
+  .social {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
