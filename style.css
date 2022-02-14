@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,6 +20,7 @@ html {
   position: relative;
   width: 1vw;
   height: 6vw;
+  font-size: 110%;
 }
 
 .subtitle-left {
@@ -81,19 +89,14 @@ header {
   margin-bottom: 30rem;
 }
 
-header img {
-  margin-top: 20rem;
-  width: 90%;
-  border-radius: 10px;
-}
-
 header h1 {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 header p {
-  margin-bottom: 6rem;
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
 }
 
 header .toggle {
@@ -111,77 +114,6 @@ header .toggle {
   padding: 0;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0.74);
-  border-right: 2px solid #c8c8c8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh;
-  z-index: 100;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-
-nav .logo {
-  padding: 30px 0;
-  text-align: center;
-}
-
-nav .logo img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-
-nav ul {
-  font-size: 1.4rem;
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-}
-
-nav ul li {
-  border-bottom: 5px solid rgba(200, 200, 200, 0.1);
-  padding: 20px;
-  list-style-type: none;
-}
-
-nav ul li:first-of-type {
-  border-bottom: 5px solid rgba(200, 200, 200, 0.1);
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.nav-closed {
-  z-index: 100;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
-.nav {
-  z-index: 100;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
-.close-nav-btn {
-  background-color: transparent;
-  font-size: 2rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  cursor: pointer;
-}
-
 footer {
   margin: 50px 70px;
   display: -webkit-box;
@@ -189,6 +121,8 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: #00000053;
+  padding: 1rem;
 }
 
 footer .social {
@@ -234,10 +168,86 @@ input[type="submit"] button:focus {
 
 #about {
   margin-bottom: 100px;
+  background: rgba(0, 0, 0, 0.327);
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 #contact {
   margin-bottom: 100px;
+  background: rgba(0, 0, 0, 0.327);
+  padding: 1rem;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.827);
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  width: 200px;
+  height: 100vh;
+  z-index: 101;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+nav .logo {
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  border-bottom: 5px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+  list-style-type: none;
+}
+
+nav ul li:first-of-type {
+  border-bottom: 5px solid rgba(200, 200, 200, 0.1);
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav-closed {
+  z-index: 100;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.nav {
+  z-index: 101;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.close-nav-btn {
+  background-color: transparent;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
 }
 
 .projects {
@@ -251,9 +261,13 @@ input[type="submit"] button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 100;
   margin-top: 3rem;
-  padding: 8px;
+  padding: 1rem;
   width: 100%;
+  color: #01a201;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.17);
 }
 
 .projectscontent {
@@ -267,6 +281,7 @@ input[type="submit"] button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 100;
 }
 
 .projectscontent img {
@@ -280,7 +295,7 @@ input[type="submit"] button:focus {
   display: flex;
   padding-right: 5px;
   font-size: 20px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .projectscontent .links .icon {
@@ -296,7 +311,7 @@ input[type="submit"] button:focus {
 }
 
 .projectscontent .links .icon a {
-  color: #e8e8e8;
+  color: #f4f4f4;
 }
 
 #home {
@@ -308,8 +323,9 @@ input[type="submit"] button:focus {
   margin-bottom: 200px;
 }
 
-#about {
-  margin-bottom: 200px;
+.projectheader {
+  background: rgba(0, 0, 0, 0.17);
+  padding: 1rem;
 }
 
 .aboutimg {
@@ -428,6 +444,9 @@ input[type="submit"] button:focus {
 }
 
 @media (min-width: 900px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.227);
+  }
   header .toggle {
     left: 1rem;
   }
