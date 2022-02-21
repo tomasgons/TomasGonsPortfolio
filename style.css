@@ -329,6 +329,11 @@ nav ul li a:hover {
   padding: 1rem;
 }
 
+iframe {
+  width: 14rem;
+  height: auto;
+}
+
 .aboutimg {
   text-align: center;
 }
@@ -473,6 +478,10 @@ nav ul li a:hover {
   }
   .projectscontent img {
     width: 500px;
+  }
+  .projectscontent iframe {
+    width: 600px;
+    height: 360px;
   }
   .aboutimg {
     margin-top: 4rem;
