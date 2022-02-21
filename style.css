@@ -20,7 +20,7 @@ img {
 }
 
 a {
-  color: white;
+  color: #727272;
   text-decoration: none;
 }
 
@@ -97,6 +97,10 @@ footer {
       justify-content: space-around;
   background: #00000053;
   padding: 1rem;
+}
+
+footer a {
+  color: white;
 }
 
 footer .social {
@@ -290,6 +294,10 @@ nav ul li a:hover {
   border: solid white 2px;
 }
 
+.projectscontent a {
+  color: white;
+}
+
 .projectscontent .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,10 +317,6 @@ nav ul li a:hover {
   text-decoration: none;
   color: white;
   padding-left: 5px;
-}
-
-.projectscontent .links .icon a {
-  color: #f4f4f4;
 }
 
 #home {
