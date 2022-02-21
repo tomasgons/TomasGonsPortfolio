@@ -30,8 +30,9 @@ img {
   height: auto;
 }
 
+
 a {
-  color: white;
+  color: rgb(114, 114, 114);
   text-decoration: none;
 
 }
@@ -106,7 +107,7 @@ footer {
   justify-content: space-around;
   background: #00000053;
   padding: 1rem;
-
+  a { color: white}
   .social {
     display: flex;
     justify-content: space-around;
@@ -257,6 +258,7 @@ nav {
     padding: 2rem;
 
   background: rgba(0, 0, 0, 0.17)
+ 
 
 }
 .projectscontent {
@@ -269,6 +271,7 @@ nav {
     border-radius: 5px;
     border: solid white 2px;
   }
+  a { color: white}
   .links {
     display: flex;
     padding-right: 5px;
@@ -284,9 +287,7 @@ nav {
       text-decoration: none;
       color: white;
       padding-left: 5px;
-     a{
-        color: rgb(244, 244, 244);
-      }
+     
     }
   }
 }
