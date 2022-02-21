@@ -2,13 +2,10 @@
 
 $primary-color: #1019bd;
 $secondary-color: #be2edd;
+$backgroundlight: rgb(255, 255, 255); 
+$backgrounddark: rgb(0, 0, 0);
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -18,41 +15,21 @@ html {
   box-sizing: border-box;
  
 }
-.title-box-left {
-  display: block;
-  position: relative;
-  width: 1vw;
-  height: 6vw;
-  font-size: 110%;
-}
 
-.subtitle-left {
-  position: absolute;
-  transition: 1s all;
-  left: 1%;
-  margin-top: 9%;
-  opacity: 0;
-  color: $secondary-color;
-  transform: translateX(-309%);
-  transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
-}
 
-.slide-in-left {
-  transform: translateX(0%);
-  opacity: 1;
-  color: white;
+
+body{
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background: $backgrounddark;
+
 }
 
 img {
   width: 90%;
   height: auto;
 }
-body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  background-image: url('pics/space.jpg');
-  color: white;
-}
+
 a {
   color: white;
   text-decoration: none;
@@ -86,6 +63,8 @@ header {
   
   
   h1 {
+    font-size: 3rem;
+    font-weight: 1000;
     margin-top: 5rem;
     margin-bottom: 8rem;
   
@@ -96,19 +75,27 @@ header {
      margin-bottom: 10rem;
   }
 
-  .toggle {
+  .toggle, .themeButton{
     position: fixed;
     cursor: pointer;
     box-shadow: none;
     background: transparent;
-
+    border: 0;
     font-family: Calibre-Regular, sans-serif;
+    color: inherit;
     font-size: 20px;
     opacity: 0.6;
     right: 1rem;
     top: 1rem;
     border-radius: 10px;
     padding: 0;
+    
+    outline: none;
+  }
+  .themeButton {
+    position: absolute;
+    font-size: 1rem;
+    right: 5rem;
   }
 }
 
@@ -126,8 +113,34 @@ footer {
     
   }
 }
-button,
-input[type="submit"] {
+
+// sliding titles
+.title-box-left {
+  display: block;
+  position: relative;
+  width: 1vw;
+  height: 6vw;
+  font-size: 110%;
+}
+
+.subtitle-left {
+  position: absolute;
+  transition: 1s all;
+  left: 1%;
+  margin-top: 9%;
+  opacity: 0;
+  color: $secondary-color;
+  transform: translateX(-309%);
+  transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
+}
+
+.slide-in-left {
+  transform: translateX(0%);
+  opacity: 1;
+  color: white;
+}
+
+input[type="submit"], .cta-btn, .close-nav-btn, .close-btn {
   background-color: $secondary-color;
   border: 0;
   color: white;
@@ -145,6 +158,7 @@ input[type="submit"] {
   font-size: 1rem;
   font-weight: bold;
 }
+
 
 .container {
   padding: 15px;
@@ -251,25 +265,20 @@ nav {
   justify-content: center;
   z-index: 100;
  
-
   img {
     border-radius: 5px;
     border: solid white 2px;
   }
   .links {
     display: flex;
-
     padding-right: 5px;
-
     font-size: 20px;
     z-index: 100;
-
     .icon {
       width: 20px;
       height: 20px;
       position: relative;
       left: 1rem;
-
       border-radius: 50%;
       margin: 10px;
       text-decoration: none;
@@ -415,6 +424,10 @@ nav {
   header .toggle {
     left: 1rem;
   }
+  header .themeButton {
+   
+  right: 10rem;
+  }
   
    
     h1  {
@@ -452,3 +465,28 @@ nav {
   }
   
   }
+
+    @media (prefers-color-scheme: light) {
+      body {
+      background: $backgroundlight;
+      color: black;
+     
+      }
+
+      body.dark-theme {
+        background: $backgrounddark;
+        color: white;
+        }
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: $backgrounddark;
+        color: white;
+        }
+        body.light-theme {
+          background: $backgroundlight;
+          color: black;
+          }
+  
+    }

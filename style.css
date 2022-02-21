@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -15,45 +8,15 @@ html {
           box-sizing: border-box;
 }
 
-.title-box-left {
-  display: block;
-  position: relative;
-  width: 1vw;
-  height: 6vw;
-  font-size: 110%;
-}
-
-.subtitle-left {
-  position: absolute;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  left: 1%;
-  margin-top: 9%;
-  opacity: 0;
-  color: #be2edd;
-  -webkit-transform: translateX(-309%);
-          transform: translateX(-309%);
-  -webkit-transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
-          transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
-}
-
-.slide-in-left {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  opacity: 1;
-  color: white;
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  background: black;
 }
 
 img {
   width: 90%;
   height: auto;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  background-image: url("pics/space.jpg");
-  color: white;
 }
 
 a {
@@ -90,6 +53,8 @@ header {
 }
 
 header h1 {
+  font-size: 3rem;
+  font-weight: 1000;
   margin-top: 5rem;
   margin-bottom: 8rem;
 }
@@ -99,19 +64,28 @@ header p {
   margin-bottom: 10rem;
 }
 
-header .toggle {
+header .toggle, header .themeButton {
   position: fixed;
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
   background: transparent;
+  border: 0;
   font-family: Calibre-Regular, sans-serif;
+  color: inherit;
   font-size: 20px;
   opacity: 0.6;
   right: 1rem;
   top: 1rem;
   border-radius: 10px;
   padding: 0;
+  outline: none;
+}
+
+header .themeButton {
+  position: absolute;
+  font-size: 1rem;
+  right: 5rem;
 }
 
 footer {
@@ -133,8 +107,36 @@ footer .social {
       justify-content: space-around;
 }
 
-button,
-input[type="submit"] {
+.title-box-left {
+  display: block;
+  position: relative;
+  width: 1vw;
+  height: 6vw;
+  font-size: 110%;
+}
+
+.subtitle-left {
+  position: absolute;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  left: 1%;
+  margin-top: 9%;
+  opacity: 0;
+  color: #be2edd;
+  -webkit-transform: translateX(-309%);
+          transform: translateX(-309%);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.4, 1.8, 0.58, 1);
+}
+
+.slide-in-left {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+  color: white;
+}
+
+input[type="submit"], .cta-btn, .close-nav-btn, .close-btn {
   background-color: #be2edd;
   border: 0;
   color: white;
@@ -144,8 +146,7 @@ input[type="submit"] {
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.427);
 }
 
-button button:focus,
-input[type="submit"] button:focus {
+input[type="submit"] button:focus, .cta-btn button:focus, .close-nav-btn button:focus, .close-btn button:focus {
   outline: none;
 }
 
@@ -450,6 +451,9 @@ nav ul li a:hover {
   header .toggle {
     left: 1rem;
   }
+  header .themeButton {
+    right: 10rem;
+  }
   h1 {
     margin-top: 8rem;
     margin-bottom: 4rem;
@@ -479,6 +483,28 @@ nav ul li a:hover {
   }
   .social {
     font-size: 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: white;
+    color: black;
+  }
+  body.dark-theme {
+    background: black;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+  body.light-theme {
+    background: white;
+    color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */
